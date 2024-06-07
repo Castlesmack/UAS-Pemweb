@@ -5,53 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/home.css">
     <style>
-        .footer-content {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 50px;
+            margin-bottom: 10px;
+
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
+            justify-content: center;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: gray;
+        }
+
+
+
+        .portfolio-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .portfolio-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            max-width: 300px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .portfolio-item p {
+            margin: 0 10px 10px;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">BI PRODUCTION</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Service</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="package.html">Package</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <h1>BI PRODUCTION</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Team</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
-
-        <section>
-            <div>
-                <div id="home">
-                    <img style="border-radius: 30px;" src="logo.png" alt="Profile Image" height="400px" width="600px">
-                    <h1>Welcome to IT Software </h2>
-                        <h3 style="color: rgb(0, 0, 0);">Where we learn, create, and use programming skills to shape the
-                            future.</h3>
-                </div>
-
+        <div style="background-color: black; padding: 100px;">
+            <div class="logo">
+                <img src="images/logo.png" alt="BI Production Logo" width="600" height="400">
 
             </div>
-        </section><br>
+            <h1 style="text-align: center;color: white;">Welcome to BI Production</h1>
+        </div>
+        <section class="portfolio-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/Porto1-BC-1536x883.png" alt="Konseki - Film Pendek">
 
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/Porto3-BC-1536x883.png" alt="Cyberbullying - Iklan Layanan Masyarakat">
 
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/Porto2-BC-1536x883.png" alt="Dampak Negatif Cosplay - News">
 
-
+                </div>
+            </div>
+        </section>
     </main>
-
-    <script src="index.JS"></script>
 </body>
 
 </html>
