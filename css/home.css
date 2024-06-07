@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details,
+.map {
+    width: 45%;
+}
+
+.social-media {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 1em;
+}
+
+.join-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.join-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form label {
+    margin: 1em 0 0.5em 0;
+}
+
+.join-form input,
+.join-form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+.join-form button {
+    margin: 1em 0;
+    padding: 0.5em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.join-form button:hover {
+    background: #555;
+}
+
+#career img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 2em auto;
+}
+
+.team-info {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-box {
+    width: 45%;
+    background: #f4f4f4;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 2em auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+ul {
+    color: #555555;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
